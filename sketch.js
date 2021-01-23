@@ -69,7 +69,7 @@ function draw() {
   if (scene == 7) image(img7, 0, 0);
 
 
-  rectMode(CENTER);
+  //rectMode(CENTER);
   noStroke();
   fill(20,245,17);
   rect(100,600,50,50);
@@ -89,17 +89,17 @@ function mousePressed(){
 
 
 
-  if (scene == 1 && mouseX>100&&mouseX<120&&mouseY>600&&mouseY<750){ scene= 3;}
-  else if (scene == 3 && mouseX>100&&mouseX<120&&mouseY>600&&mouseY<750){
+  if (scene == 1 && mouseX>100&&mouseX<150&&mouseY>600&&mouseY<650){ scene= 3;}
+  else if (scene == 3 && mouseX>100&&mouseX<150&&mouseY>600&&mouseY<650){
       myVoice.speak('Bana yardım edicekmisin?');
     scene= 4;}
-   else if (scene == 4 && mouseX>100&&mouseX<120&&mouseY>600&&mouseY<750){
+   else if (scene == 4 && mouseX>100&&mouseX<150&&mouseY>600&&mouseY<650){
      scene= 6;}
-   else if (scene == 6 && mouseX>100&&mouseX<120&&mouseY>600&&mouseY<750){
+   else if (scene == 6 && mouseX>100&&mouseX<150&&mouseY>600&&mouseY<650){
      scene= 7;}
 
-  if (scene == 1 && mouseX>400&&mouseX<420&&mouseY>600&&mouseY<750){ scene= 2;}
-else if (scene == 4 && mouseX>400&&mouseX<420&&mouseY>600&&mouseY<750){ scene= 5;}
+  if (scene == 1 && mouseX>400&&mouseX<450&&mouseY>600&&mouseY<650){ scene= 2;}
+else if (scene == 4 && mouseX>400&&mouseX<450&&mouseY>600&&mouseY<650){ scene= 5;}
 
 
 
